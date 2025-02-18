@@ -40,14 +40,13 @@ The project integrates multiple datasets:
 
 ## 📌 **Setup & Usage Instructions**
 
-### **1️⃣ Clone the Repository**
+### ** 1. Clone the Repository**
 To get started, clone the repository to your local machine:
 
-```bash
 git clone https://github.com/advanced-computing/citibike_project.git
 cd citibike_project
 
-### 2️⃣ **Create and Activate a Virtual Environment**
+### 2. **Create and Activate a Virtual Environment**
 To ensure dependencies are managed properly, create and activate a **virtual environment**.
 
 #### ✅ **For macOS & Linux:**
@@ -63,3 +62,12 @@ After activating your virtual environment, install the required dependencies fro
 pip install -r requirements.txt
 
 **Note: The setup section will be continuously updated over time.**
+
+## 🎯 **Open in Colab button**
+- Please click here:
+<a target="_blank" href="https://colab.research.google.com/github/advanced-computing/citibike_project/blob/main/citibike_project/Project_part_1.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+Or you could go directly to here:
+- Please click here:
+https://colab.research.google.com/github/advanced-computing/citibike_project/blob/main/citibike_project/Project_part_1.ipynb
