@@ -1,5 +1,0 @@
-import pandas as pd
-
-brooklyn_url = "https://raw.githubusercontent.com/advanced-computing/citibike_project/main/Brooklyn_citibike.csv"
-df_brooklyn = pd.read_csv(brooklyn_url, low_memory=False)
-print(df_brooklyn.head())
