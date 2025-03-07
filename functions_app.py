@@ -1,7 +1,5 @@
 import pandas as pd
 import requests
-import plotly.express as px
-import folium
 from io import StringIO
 
 def load_data_from_github(url):
