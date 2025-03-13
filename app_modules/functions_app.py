@@ -1,5 +1,6 @@
 import pandas as pd
 import requests
+import os
 
 POVERTY_XLSX_URL = "https://raw.githubusercontent.com/advanced-computing/citibike_project/main/app_data/poverty_zip_code.xlsx"
 
