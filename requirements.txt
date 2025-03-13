@@ -17,3 +17,4 @@ pytest-flask
 requests
 python-dotenv
 gunicorn
+openpyxl
