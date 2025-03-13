@@ -1,8 +1,17 @@
 import pandas as pd
 import requests
 
+POVERTY_XLSX_URL = "https://raw.githubusercontent.com/advanced-computing/citibike_project/main/app_data/poverty_zip_code.xlsx"
+
 def load_poverty_data():
-    return pd.read_excel("https://raw.githubusercontent.com/advanced-computing/citibike_project/main/app_data/poverty_zip_code.xlsx")
+    local_file = "poverty_zip_code.xlsx"
+    
+    if not os.path.exists(local_file):
+        response = requests.get(POVERTY_XLSX_URL)
+        with open(local_file, "wb") as f:
+            f.write(response.content)
+
+    return pd.read_excel(local_file, engine="openpyxl")
 
 def load_geojson():
     response = requests.get("https://raw.githubusercontent.com/advanced-computing/citibike_project/main/app_data/nyc_zipcodes_filtered.geojson")
