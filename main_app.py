@@ -1,14 +1,12 @@
 import streamlit as st
 from app_modules.functions_app import load_poverty_data, load_citibike_data, load_geojson, process_poverty_data
-from app_modules.tabs_app import citibike_poverty_tab
+from app_modules.tabs_app import citibike_poverty_tab, show_initial_proposal, show_revisited_proposal
 from app_modules.styles_app import apply_styles
 
 apply_styles()
 
 def welcome_tab():
-    
     st.title("🚲 **Welcome to CitiBike App**")
-
     st.markdown("""
         ### **Project Overview**
         The CitiBike App is designed to analyze CitiBike usage, stations and poverty levels in New York City. 
@@ -24,12 +22,11 @@ def welcome_tab():
         ### **Angel Ragas & Krishna Kishore**
         ---
     """)
-
     st.info("Use the sidebar to navigate through different analysis tabs.")
 
 selected_tab = st.sidebar.radio(
     "Select Analysis",
-    ["Welcome", "Citibike and Poverty"],
+    ["Welcome", "Citibike and Poverty", "Initial Proposal", "Revisited Proposal"],
     index=0
 )
 
@@ -43,3 +40,7 @@ if selected_tab == "Welcome":
     welcome_tab()
 elif selected_tab == "Citibike and Poverty":
     citibike_poverty_tab(poverty_df, geojson_data, zip_code_station_count, poverty_trips_df, stations_by_poverty_df)
+elif selected_tab == "Initial Proposal":
+    show_initial_proposal()
+elif selected_tab == "Revisited Proposal":
+    show_revisited_proposal()
