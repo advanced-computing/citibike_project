@@ -64,15 +64,24 @@ Both **station availability and trip frequency** **decrease** in high-poverty ar
 
 ---
 
-## 📌 **Final Takeaways & Next Steps**
+## 📌 **Additional Key Insights Identified So Far**
 
-1️⃣ **Enhanced dataset integration** across CitiBike, poverty, and traffic data.  
-2️⃣ **Improved storytelling** with more effective visualizations.  
-3️⃣ **Refactored app structure** for long-term maintainability.  
-4️⃣ **Optimized team workflow** for consistent progress.  
+1. **Map Analysis:** CitiBike stations are densely located in close geographic areas, suggesting a consolidated network over the years.
+2. **Histogram Observation:** Stations are mostly found in zip codes with **0% to 30%** poverty levels.
+3. **Scatterplot Finding:** Many CitiBike trips originate in **0% to 20%** poverty areas, indicating lower bike usage in **20% to 30% poverty zones**, despite a high number of stations.
+
+---
+
+## 🚀 **Next Steps**
+
+We plan to incorporate **two additional datasets** to enhance our analysis:
+- **Traffic congestion data**, to analyze how road congestion impacts CitiBike usage.
+- **Hospital admission data**, to explore potential correlations between CitiBike usage, accessibility, and public health.
 
 📌 All changes have been **documented in the Streamlit App** under the **"Proposal Adjustments"** tab.
 
 ---
+
+🛠 **Next Steps:** Continue refining visualizations and explore deeper policy implications based on our findings.
 
 🛠 **Next Steps:** Continue refining visualizations and explore deeper policy implications based on our findings.
